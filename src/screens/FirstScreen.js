@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, TouchableOpacity, Text } from 'react-native';
+import { View, TextInput, TouchableOpacity, Text, Image } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 
 export default function FirstScreen({ navigation }) {
@@ -9,6 +9,7 @@ export default function FirstScreen({ navigation }) {
 
   return(
     <View style={{ flex: 1, justifyContent: 'center' }}>
+      <Image style={{ height: 90, width: 200, alignSelf: 'center', marginBottom: 30 }} source={{ uri: 'https://via.placeholder.com/200x90' }} />
       <TextInput
         style={{ height: 60, borderWidth: 1, margin: 30, textAlign: 'center', fontSize: 30, color: 'black' }}
         placeholder='Type name here'
